@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les créations de l'artiste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #6d83f2;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Voici les créations de l'artiste</h1>
+        <p>La vie est un art, et toi, tu es une œuvre unique.</p>
+    </header>
+    <main>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Création 1">
+            <img src="image2.jpg" alt="Création 2">
+            <img src="image3.jpg" alt="Création 3">
+            <img src="image4.jpg" alt="Création 4">
+        </div>
+    </main>
+</body>
+</html>
